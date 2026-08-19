@@ -101,60 +101,71 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
 export default function Testimonials() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  // Auto-scroll on mobile
+  // Auto-scroll on mobile — jump between cards smoothly
   useEffect(() => {
     const container = scrollRef.current;
     if (!container) return;
 
-    let animFrame: number;
-    let lastTime = 0;
-    const speed = 0.4; // px per ms
+    let timer: ReturnType<typeof setInterval>;
+    let paused = false;
 
-    const animate = (time: number) => {
-      if (lastTime) {
-        const delta = time - lastTime;
-        container.scrollLeft += speed * delta;
-
-        // Reset to start when reaching the end
-        if (
-          container.scrollLeft >=
-          container.scrollWidth - container.clientWidth - 2
-        ) {
-          container.scrollLeft = 0;
-        }
-      }
-      lastTime = time;
-      animFrame = requestAnimationFrame(animate);
+    const getCardWidth = () => {
+      const firstCard = container.children[0] as HTMLElement;
+      if (!firstCard) return 0;
+      return firstCard.offsetWidth + 20; // card width + gap
     };
 
-    // Only auto-scroll on mobile
+    const scrollToNext = () => {
+      if (paused) return;
+      const cardWidth = getCardWidth();
+      if (!cardWidth) return;
+
+      const maxScroll = container.scrollWidth - container.clientWidth;
+      const atEnd = container.scrollLeft >= maxScroll - 5;
+
+      container.scrollTo({
+        left: atEnd ? 0 : container.scrollLeft + cardWidth,
+        behavior: "smooth",
+      });
+    };
+
     const mq = window.matchMedia("(max-width: 639px)");
     if (mq.matches) {
-      animFrame = requestAnimationFrame(animate);
+      timer = setInterval(scrollToNext, 3500);
     }
 
-    const handler = (e: MediaQueryListEvent) => {
+    const mqHandler = (e: MediaQueryListEvent) => {
       if (e.matches) {
-        lastTime = 0;
-        animFrame = requestAnimationFrame(animate);
+        timer = setInterval(scrollToNext, 3500);
       } else {
-        cancelAnimationFrame(animFrame);
+        clearInterval(timer);
         container.scrollLeft = 0;
       }
     };
-    mq.addEventListener("change", handler);
+    mq.addEventListener("change", mqHandler);
+
+    // Pause on touch, resume after 5s idle
+    let resumeTimeout: ReturnType<typeof setTimeout>;
+    const onTouchStart = () => {
+      paused = true;
+      clearTimeout(resumeTimeout);
+    };
+    const onTouchEnd = () => {
+      resumeTimeout = setTimeout(() => {
+        paused = false;
+      }, 5000);
+    };
+    container.addEventListener("touchstart", onTouchStart, { passive: true });
+    container.addEventListener("touchend", onTouchEnd, { passive: true });
 
     return () => {
-      cancelAnimationFrame(animFrame);
-      mq.removeEventListener("change", handler);
+      clearInterval(timer);
+      clearTimeout(resumeTimeout);
+      mq.removeEventListener("change", mqHandler);
+      container.removeEventListener("touchstart", onTouchStart);
+      container.removeEventListener("touchend", onTouchEnd);
     };
   }, []);
-
-  // Pause auto-scroll on touch
-  const handleTouchStart = () => {
-    const container = scrollRef.current;
-    if (container) container.dataset.paused = "true";
-  };
 
   return (
     <section className="bg-white py-16 sm:py-24">
@@ -195,8 +206,7 @@ export default function Testimonials() {
         {/* Testimonials slider on mobile, grid on desktop */}
         <div
           ref={scrollRef}
-          onTouchStart={handleTouchStart}
-          className="mt-8 flex snap-x snap-mandatory gap-5 overflow-x-auto px-[8vw] pb-4 hide-scrollbar sm:mt-12 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-4 lg:grid-cols-3 lg:pb-0"
+          className="mt-8 flex snap-x snap-mandatory gap-5 overflow-x-auto scroll-smooth px-[8vw] pb-4 hide-scrollbar sm:mt-12 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-4 sm:pb-0 lg:grid-cols-3"
         >
           {testimonials.map((testimonial) => (
             <div
