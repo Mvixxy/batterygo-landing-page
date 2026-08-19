@@ -41,7 +41,7 @@ export default function Benefits() {
             Mengapa BatteryGo?
           </span>
           <h2 className="mt-4 font-display text-3xl font-bold text-dark sm:text-4xl">
-            Keunggulan yang Membuat
+            Keunggulan yang Membuat{" "}
             <br className="hidden sm:block" />
             <span className="text-amber">Kami Berbeda</span>
           </h2>
