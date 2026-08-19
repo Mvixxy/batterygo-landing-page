@@ -1,6 +1,6 @@
 import { Phone, ChevronDown, Shield, Truck, Clock, BadgeCheck } from "lucide-react";
 
-const WHATSAPP_NUMBER = "6281234567890";
+const WHATSAPP_NUMBER = "6283851053900";
 
 const stats = [
   { icon: Clock, value: "10+", label: "Tahun Pengalaman" },
@@ -35,6 +35,11 @@ export default function Hero() {
         {/* Hero content */}
         <div className="flex min-h-screen flex-col justify-center pt-20 pb-16">
           <div className="max-w-3xl">
+            {/* Service ribbon */}
+            <div className="mb-4 inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-white backdrop-blur-sm">
+              Melayani pemasangan 24 jam
+            </div>
+
             {/* Eyebrow */}
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-amber/30 bg-amber/10 px-4 py-2">
               <div className="h-2 w-2 rounded-full bg-amber charge-pulse" />
@@ -61,7 +66,7 @@ export default function Hero() {
             {/* CTA buttons */}
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
               <a
-                href={`https://wa.me/${WHATSAPP_NUMBER}?text=Halo%20PowerBatt%2C%20saya%20mau%20tanya%20aki`}
+                href={`https://wa.me/${WHATSAPP_NUMBER}?text=Halo%20BatteryKu%2C%20saya%20mau%20tanya%20aki`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 rounded-full bg-whatsapp px-8 py-4 text-base font-bold text-white shadow-xl shadow-whatsapp/30 transition-all hover:scale-105 hover:bg-whatsapp-dark hover:shadow-whatsapp/50 sm:text-lg"

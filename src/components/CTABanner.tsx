@@ -1,6 +1,6 @@
 import { Phone } from "lucide-react";
 
-const WHATSAPP_NUMBER = "6281234567890";
+const WHATSAPP_NUMBER = "6283851053900";
 
 export default function CTABanner() {
   return (
@@ -19,7 +19,7 @@ export default function CTABanner() {
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href={`https://wa.me/${WHATSAPP_NUMBER}?text=Halo%20PowerBatt%2C%20saya%20butuh%20aki%20sekarang`}
+            href={`https://wa.me/${WHATSAPP_NUMBER}?text=Halo%20BatteryKu%2C%20saya%20butuh%20aki%20sekarang`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 rounded-full bg-whatsapp px-8 py-4 text-base font-bold text-white shadow-xl shadow-whatsapp/30 transition-all hover:scale-105 hover:bg-whatsapp-dark sm:text-lg"
@@ -28,7 +28,7 @@ export default function CTABanner() {
             Chat WhatsApp Sekarang
           </a>
           <a
-            href="tel:+6281234567890"
+            href="tel:+6283851053900"
             className="inline-flex items-center gap-2 rounded-full border-2 border-white/20 px-8 py-4 text-base font-semibold text-white transition-all hover:border-white/40 sm:text-lg"
           >
             <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">

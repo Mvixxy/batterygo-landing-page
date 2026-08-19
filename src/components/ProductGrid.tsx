@@ -1,6 +1,6 @@
 import { Phone, Zap } from "lucide-react";
 
-const WHATSAPP_NUMBER = "6281234567890";
+const WHATSAPP_NUMBER = "6283851053900";
 
 interface Product {
   brand: string;
@@ -136,7 +136,7 @@ const motorProducts: Product[] = [
 
 function ProductCard({ product }: { product: Product }) {
   const waMessage = encodeURIComponent(
-    `Halo PowerBatt, saya tertarik dengan:\n\n*${product.brand} ${product.model}*\nKapasitas: ${product.capacity}\nHarga: ${product.price}\n\nMohon info lebih lanjut.`
+    `Halo BatteryKu, saya tertarik dengan:\n\n*${product.brand} ${product.model}*\nKapasitas: ${product.capacity}\nHarga: ${product.price}\n\nMohon info lebih lanjut.`
   );
 
   return (
