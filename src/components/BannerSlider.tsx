@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const banners = [
   {
@@ -42,10 +41,6 @@ export default function BannerSlider() {
 
   const next = useCallback(() => {
     setCurrent((prev) => (prev + 1) % banners.length);
-  }, []);
-
-  const prev = useCallback(() => {
-    setCurrent((prev) => (prev - 1 + banners.length) % banners.length);
   }, []);
 
   const goTo = (index: number) => {
@@ -125,22 +120,6 @@ export default function BannerSlider() {
               </div>
             ))}
           </div>
-
-          {/* Navigation arrows */}
-          <button
-            onClick={prev}
-            className="absolute left-3 top-1/2 z-10 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur-sm transition-colors hover:bg-white/30 sm:left-4 sm:h-10 sm:w-10"
-            aria-label="Previous"
-          >
-            <ChevronLeft className="h-5 w-5" />
-          </button>
-          <button
-            onClick={next}
-            className="absolute right-3 top-1/2 z-10 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur-sm transition-colors hover:bg-white/30 sm:right-4 sm:h-10 sm:w-10"
-            aria-label="Next"
-          >
-            <ChevronRight className="h-5 w-5" />
-          </button>
 
           {/* Dots */}
           <div className="absolute bottom-3 left-1/2 z-10 flex -translate-x-1/2 gap-2">
