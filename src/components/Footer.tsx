@@ -21,7 +21,7 @@ const storeInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "info@batteryku.com",
+    value: "info@batterygo.com",
   },
 ];
 
@@ -67,7 +67,7 @@ export default function Footer() {
                 </svg>
               </div>
               <span className="font-display text-xl font-extrabold text-white">
-                BatteryKu
+                BatteryGo
               </span>
             </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/50">
@@ -146,7 +146,7 @@ export default function Footer() {
         <div className="mt-12 border-t border-white/10 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="text-xs text-white/30">
-              &copy; {new Date().getFullYear()} BatteryKu. Semua hak dilindungi.
+              &copy; {new Date().getFullYear()} BatteryGo. Semua hak dilindungi.
             </p>
             <p className="text-xs text-white/30">
               Solusi aki terpercaya untuk mobil & motor Anda.

@@ -19,7 +19,7 @@ export default function CTABanner() {
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href={`https://wa.me/${WHATSAPP_NUMBER}?text=Halo%20BatteryKu%2C%20saya%20butuh%20aki%20sekarang`}
+            href={`https://wa.me/${WHATSAPP_NUMBER}?text=Halo%20BatteryGo%2C%20saya%20butuh%20aki%20sekarang`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 rounded-full bg-whatsapp px-8 py-4 text-base font-bold text-white shadow-xl shadow-whatsapp/30 transition-all hover:scale-105 hover:bg-whatsapp-dark sm:text-lg"

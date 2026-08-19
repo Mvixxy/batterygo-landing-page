@@ -136,7 +136,7 @@ const motorProducts: Product[] = [
 
 function ProductCard({ product }: { product: Product }) {
   const waMessage = encodeURIComponent(
-    `Halo BatteryKu, saya tertarik dengan:\n\n*${product.brand} ${product.model}*\nKapasitas: ${product.capacity}\nHarga: ${product.price}\n\nMohon info lebih lanjut.`
+    `Halo BatteryGo, saya tertarik dengan:\n\n*${product.brand} ${product.model}*\nKapasitas: ${product.capacity}\nHarga: ${product.price}\n\nMohon info lebih lanjut.`
   );
 
   return (

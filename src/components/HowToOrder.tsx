@@ -84,7 +84,7 @@ export default function HowToOrder() {
         {/* CTA */}
         <div className="mt-14 text-center">
           <a
-            href={`https://wa.me/${WHATSAPP_NUMBER}?text=Halo%20BatteryKu%2C%20saya%20mau%20order%20aki`}
+            href={`https://wa.me/${WHATSAPP_NUMBER}?text=Halo%20BatteryGo%2C%20saya%20mau%20order%20aki`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 rounded-full bg-navy px-8 py-4 text-base font-bold text-white shadow-xl shadow-navy/20 transition-all hover:scale-105 hover:bg-navy-light sm:text-lg"

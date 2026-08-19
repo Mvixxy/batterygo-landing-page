@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Phone, Menu, X } from "lucide-react";
 
 const WHATSAPP_NUMBER = "6283851053900";
-const STORE_NAME = "BatteryKu";
+const STORE_NAME = "BatteryGo";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -85,7 +85,7 @@ export default function Header() {
               </a>
             ))}
             <a
-              href={`https://wa.me/${WHATSAPP_NUMBER}?text=Halo%20BatteryKu%2C%20saya%20mau%20tanya%20aki`}
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=Halo%20BatteryGo%2C%20saya%20mau%20tanya%20aki`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-full bg-whatsapp px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-whatsapp/25 transition-all hover:bg-whatsapp-dark hover:shadow-whatsapp/40"
@@ -127,7 +127,7 @@ export default function Header() {
               </a>
             ))}
             <a
-              href={`https://wa.me/${WHATSAPP_NUMBER}?text=Halo%20BatteryKu%2C%20saya%20mau%20tanya%20aki`}
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=Halo%20BatteryGo%2C%20saya%20mau%20tanya%20aki`}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileOpen(false)}

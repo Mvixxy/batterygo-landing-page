@@ -15,7 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "BatteryKu - Jual Aki Mobil & Motor Terpercaya | Harga Terbaik",
+  title: "BatteryGo - Jual Aki Mobil & Motor Terpercaya | Harga Terbaik",
   description:
     "Jual aki mobil dan motor berkualitas dengan harga terbaik. GS Astra, Incoe, Yuasa, dan masih banyak lagi. Gratis konsultasi, pengiriman cepat, garansi resmi.",
   keywords: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "aki berkualitas",
   ],
   openGraph: {
-    title: "BatteryKu - Jual Aki Mobil & Motor Terpercaya",
+    title: "BatteryGo - Jual Aki Mobil & Motor Terpercaya",
     description:
       "Aki mobil dan motor berkualitas dengan harga terbaik. Gratis konsultasi & pengiriman cepat.",
     type: "website",

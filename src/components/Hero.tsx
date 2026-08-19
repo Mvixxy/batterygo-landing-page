@@ -66,7 +66,7 @@ export default function Hero() {
             {/* CTA buttons */}
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
               <a
-                href={`https://wa.me/${WHATSAPP_NUMBER}?text=Halo%20BatteryKu%2C%20saya%20mau%20tanya%20aki`}
+                href={`https://wa.me/${WHATSAPP_NUMBER}?text=Halo%20BatteryGo%2C%20saya%20mau%20tanya%20aki`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 rounded-full bg-whatsapp px-8 py-4 text-base font-bold text-white shadow-xl shadow-whatsapp/30 transition-all hover:scale-105 hover:bg-whatsapp-dark hover:shadow-whatsapp/50 sm:text-lg"
