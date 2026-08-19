@@ -29,7 +29,7 @@ export default function MapSection() {
         {/* Map + Info card */}
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
           {/* Store info cards */}
-          <div className="flex flex-col gap-4 lg:order-1">
+          <div className="flex flex-col gap-4">
             {/* Address */}
             <div className="flex items-start gap-4 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm">
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-navy/5">
@@ -70,35 +70,37 @@ export default function MapSection() {
                 <p className="mt-1 text-xs text-muted">{STORE_PHONE}</p>
               </div>
             </div>
-
-            {/* CTA button */}
-            <a
-              href="https://maps.google.com/?q=-6.4536,106.8476"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 rounded-xl bg-navy px-5 py-3.5 text-sm font-bold text-white shadow-lg shadow-navy/20 transition-all hover:bg-navy-light hover:shadow-navy/30 hover:scale-[1.02]"
-            >
-              <MapPin className="h-4 w-4" />
-              Buka di Google Maps
-            </a>
           </div>
 
           {/* Map embed */}
-          <div className="lg:order-2 lg:col-span-2">
+          <div className="lg:col-span-2">
             <div className="overflow-hidden rounded-2xl border border-gray-100 shadow-sm">
               <iframe
                 src={MAPS_EMBED}
                 width="100%"
-                height="400"
+                height="350"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Lokasi BatteryGo - Cibinong, Bogor"
-                className="w-full sm:h-[450px] lg:h-full"
+                className="h-[350px] sm:h-[400px] lg:h-[500px]"
               />
             </div>
           </div>
+        </div>
+
+        {/* CTA button - below map */}
+        <div className="mt-8 flex justify-center">
+          <a
+            href="https://maps.google.com/?q=-6.4536,106.8476"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-xl bg-navy px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-navy/20 transition-all hover:bg-navy-light hover:shadow-navy/30 hover:scale-[1.02]"
+          >
+            <MapPin className="h-4 w-4" />
+            Buka di Google Maps
+          </a>
         </div>
       </div>
     </section>
