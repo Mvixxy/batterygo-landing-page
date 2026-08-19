@@ -31,7 +31,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         {/* Hero content */}
         <div className="flex min-h-screen flex-col justify-center pt-20 pb-12 sm:pt-20 sm:pb-16">
           <div className="max-w-3xl">
@@ -108,12 +108,12 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 scroll-bounce sm:bottom-8">
+      <div className="absolute bottom-6 left-1/2 z-10 -translate-x-1/2 scroll-bounce sm:bottom-8">
         <ChevronDown className="h-6 w-6 text-white/30" />
       </div>
 
       {/* Gradient fade to white */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-white sm:h-32" />
+      <div className="absolute bottom-0 left-0 right-0 z-10 h-16 bg-gradient-to-t from-white to-transparent" />
     </section>
   );
 }
