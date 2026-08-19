@@ -50,6 +50,14 @@ export const metadata: Metadata = {
     siteName: "BatteryGo",
     type: "website",
     locale: "id_ID",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "BatteryGo - Toko Aki 24 Jam Bogor",
+      },
+    ],
   },
   alternates: {
     canonical: "https://gantiaki24jam.web.id",
