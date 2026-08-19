@@ -233,10 +233,10 @@ function ProductCard({ product }: { product: Product }) {
 export default function ProductGrid() {
   return (
     <section id="produk" className="bg-slate-bg py-20 sm:py-28">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl sm:px-6 lg:px-8">
         {/* Car batteries */}
         <div className="mb-20">
-          <div className="mx-auto max-w-2xl text-center">
+          <div className="mx-auto max-w-2xl px-4 text-center sm:px-0">
             <span className="inline-block rounded-full bg-navy/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-navy">
               Produk Kami
             </span>
@@ -249,16 +249,26 @@ export default function ProductGrid() {
             </p>
           </div>
 
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {/* Swipe hint on mobile */}
+          <div className="mt-6 flex items-center justify-center gap-2 sm:hidden">
+            <span className="text-xs text-muted">Geser untuk lihat lainnya</span>
+            <svg className="h-4 w-4 text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+
+          <div className="mt-10 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4 hide-scrollbar sm:grid sm:grid-cols-2 sm:overflow-visible sm:pb-0 lg:grid-cols-4">
             {carProducts.map((product) => (
-              <ProductCard key={product.model} product={product} />
+              <div key={product.model} className="w-[75vw] min-w-[75vw] snap-center sm:w-auto sm:min-w-0 sm:snap-none">
+                <ProductCard product={product} />
+              </div>
             ))}
           </div>
         </div>
 
         {/* Motorcycles */}
         <div>
-          <div className="mx-auto max-w-2xl text-center">
+          <div className="mx-auto max-w-2xl px-4 text-center sm:px-0">
             <span className="inline-block rounded-full bg-navy/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-navy">
               Produk Kami
             </span>
@@ -271,9 +281,19 @@ export default function ProductGrid() {
             </p>
           </div>
 
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {/* Swipe hint on mobile */}
+          <div className="mt-6 flex items-center justify-center gap-2 sm:hidden">
+            <span className="text-xs text-muted">Geser untuk lihat lainnya</span>
+            <svg className="h-4 w-4 text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+
+          <div className="mt-10 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4 hide-scrollbar sm:grid sm:grid-cols-2 sm:overflow-visible sm:pb-0 lg:grid-cols-3">
             {motorProducts.map((product) => (
-              <ProductCard key={product.model} product={product} />
+              <div key={product.model} className="w-[75vw] min-w-[75vw] snap-center sm:w-auto sm:min-w-0 sm:snap-none">
+                <ProductCard product={product} />
+              </div>
             ))}
           </div>
         </div>
