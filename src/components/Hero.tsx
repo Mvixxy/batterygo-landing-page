@@ -45,13 +45,13 @@ export default function Hero() {
             </h1>
 
             {/* Badges - side by side on mobile */}
-            <div className="mt-4 flex flex-wrap items-center gap-2 sm:mt-6 sm:gap-3">
-              <div className="inline-flex rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-xs font-semibold text-white backdrop-blur-sm sm:px-4 sm:py-2 sm:text-sm">
+            <div className="mt-3 flex flex-nowrap items-center gap-1.5 sm:mt-6 sm:flex-wrap sm:gap-3">
+              <div className="whitespace-nowrap rounded-full border border-white/20 bg-white/10 px-2.5 py-1 text-[10px] font-semibold text-white backdrop-blur-sm sm:inline-flex sm:px-4 sm:py-2 sm:text-sm">
                 Melayani pemasangan 24 jam
               </div>
-              <div className="inline-flex items-center gap-1.5 rounded-full border border-amber/30 bg-amber/10 px-3 py-1.5 sm:px-4 sm:py-2">
+              <div className="inline-flex items-center gap-1 whitespace-nowrap rounded-full border border-amber/30 bg-amber/10 px-2.5 py-1 sm:px-4 sm:py-2">
                 <div className="h-1.5 w-1.5 rounded-full bg-amber charge-pulse sm:h-2 sm:w-2" />
-                <span className="text-xs font-medium text-amber sm:text-sm">
+                <span className="text-[10px] font-medium text-amber sm:text-sm">
                   Tersedia untuk Mobil & Motor
                 </span>
               </div>
