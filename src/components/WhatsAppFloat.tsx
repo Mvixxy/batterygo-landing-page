@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 
-const WHATSAPP_NUMBER = "6283851053900";
+const WHATSAPP_NUMBER = "6282321006968";
 
 export default function WhatsAppFloat() {
   const [visible, setVisible] = useState(false);

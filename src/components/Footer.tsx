@@ -1,27 +1,27 @@
 import { MapPin, Clock, Phone, Mail } from "lucide-react";
 
-const WHATSAPP_NUMBER = "6283851053900";
+const WHATSAPP_NUMBER = "6282321006968";
 
 const storeInfo = [
   {
     icon: MapPin,
     label: "Alamat",
-    value: "Jl. Contoh No. 123, Kota, Provinsi",
+    value: "Jl. Raya Karadenan RT 3 RW 4, Kel. Karadenan, Kec. Cibinong, Kab. Bogor 16913",
   },
   {
     icon: Clock,
     label: "Jam Buka",
-    value: "Senin - Sabtu: 08.00 - 17.00",
+    value: "Senin - Minggu: 07.00 - 21.00",
   },
   {
     icon: Phone,
     label: "Telepon / WhatsApp",
-    value: "+62 838-5105-3900",
+    value: "+62 823-2100-6968",
   },
   {
     icon: Mail,
     label: "Email",
-    value: "info@batterygo.com",
+    value: "support@gantiaki24jam.web.id",
   },
 ];
 

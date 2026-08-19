@@ -1,6 +1,6 @@
 import { Phone } from "lucide-react";
 
-const WHATSAPP_NUMBER = "6283851053900";
+const WHATSAPP_NUMBER = "6282321006968";
 
 export default function CTABanner() {
   return (
@@ -28,7 +28,7 @@ export default function CTABanner() {
             Chat WhatsApp Sekarang
           </a>
           <a
-            href="tel:+6283851053900"
+            href="tel:+6282321006968"
             className="inline-flex items-center gap-2 rounded-full border-2 border-white/20 px-8 py-4 text-base font-semibold text-white transition-all hover:border-white/40 sm:text-lg"
           >
             <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">

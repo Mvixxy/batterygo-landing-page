@@ -1,6 +1,6 @@
 import { MessageCircle, CreditCard, Package } from "lucide-react";
 
-const WHATSAPP_NUMBER = "6283851053900";
+const WHATSAPP_NUMBER = "6282321006968";
 
 const steps = [
   {

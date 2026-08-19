@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { Phone, Menu, X } from "lucide-react";
 
-const WHATSAPP_NUMBER = "6283851053900";
+const WHATSAPP_NUMBER = "6282321006968";
 const STORE_NAME = "BatteryGo";
 
 export default function Header() {
