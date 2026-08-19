@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     "aki murah",
     "aki berkualitas",
   ],
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     title: "BatteryGo - Jual Aki Mobil & Motor Terpercaya",
     description:
