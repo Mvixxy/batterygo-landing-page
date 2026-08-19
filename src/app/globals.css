@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #0B1D3A;
+  --navy-light: #132B52;
+  --amber: #F59E0B;
+  --amber-dark: #D97706;
+  --slate: #F1F5F9;
+  --white: #FFFFFF;
+  --dark: #1E293B;
+  --muted: #64748B;
+  --whatsapp: #25D366;
+  --whatsapp-dark: #128C7E;
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-navy-light: var(--navy-light);
+  --color-amber: var(--amber);
+  --color-amber-dark: var(--amber-dark);
+  --color-slate-bg: var(--slate);
+  --color-whatsapp: var(--whatsapp);
+  --color-whatsapp-dark: var(--whatsapp-dark);
+  --color-dark: var(--dark);
+  --color-muted: var(--muted);
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--dark);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Battery charge animation */
+@keyframes charge-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.charge-pulse {
+  animation: charge-pulse 2s ease-in-out infinite;
+}
+
+/* Smooth scroll indicator */
+@keyframes scroll-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+.scroll-bounce {
+  animation: scroll-bounce 1.5s ease-in-out infinite;
+}
