@@ -111,6 +111,9 @@ export default function Hero() {
       <div className="absolute bottom-5 left-1/2 -translate-x-1/2 scroll-bounce sm:bottom-8">
         <ChevronDown className="h-6 w-6 text-white/30" />
       </div>
+
+      {/* Gradient fade to white */}
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-white sm:h-32" />
     </section>
   );
 }
