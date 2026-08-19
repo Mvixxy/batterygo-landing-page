@@ -159,7 +159,7 @@ function ProductCard({ product }: { product: Product }) {
       {/* Photo placeholder */}
       <div className="relative flex h-44 items-center justify-center overflow-hidden rounded-t-2xl bg-gradient-to-br from-slate-bg to-gray-100">
         {product.popular && (
-          <div className="absolute left-3 top-3 z-10 flex items-center gap-1 rounded-full bg-amber px-3 py-1 text-xs font-bold text-navy shadow-sm">
+          <div className="absolute right-3 top-3 z-10 flex items-center gap-1 rounded-full bg-amber px-3 py-1 text-xs font-bold text-navy shadow-sm">
             <Zap className="h-3 w-3" />
             Populer
           </div>
