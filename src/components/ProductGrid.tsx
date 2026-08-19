@@ -156,15 +156,14 @@ function ProductCard({ product }: { product: Product }) {
 
   return (
     <div className="group relative flex flex-col rounded-2xl border border-gray-100 bg-white shadow-sm transition-all hover:border-amber/30 hover:shadow-lg hover:shadow-amber/5">
-      {product.popular && (
-        <div className="absolute -top-3 right-4 z-10 flex items-center gap-1 rounded-full bg-amber px-3 py-1 text-xs font-bold text-navy shadow-sm">
-          <Zap className="h-3 w-3" />
-          Populer
-        </div>
-      )}
-
       {/* Photo placeholder */}
       <div className="relative flex h-44 items-center justify-center overflow-hidden rounded-t-2xl bg-gradient-to-br from-slate-bg to-gray-100">
+        {product.popular && (
+          <div className="absolute left-3 top-3 z-10 flex items-center gap-1 rounded-full bg-amber px-3 py-1 text-xs font-bold text-navy shadow-sm">
+            <Zap className="h-3 w-3" />
+            Populer
+          </div>
+        )}
         <div className="flex flex-col items-center gap-2 text-gray-300">
           <ImageOff className="h-10 w-10" />
           <span className="text-xs font-medium">Foto Produk</span>
@@ -257,7 +256,7 @@ export default function ProductGrid() {
             </svg>
           </div>
 
-          <div className="mt-10 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4 hide-scrollbar sm:grid sm:grid-cols-2 sm:overflow-visible sm:pb-0 lg:grid-cols-4">
+          <div className="mt-10 flex snap-x snap-mandatory gap-5 overflow-x-auto px-[12.5vw] pb-4 hide-scrollbar sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-4">
             {carProducts.map((product) => (
               <div key={product.model} className="w-[75vw] min-w-[75vw] snap-center sm:w-auto sm:min-w-0 sm:snap-none">
                 <ProductCard product={product} />
@@ -289,7 +288,7 @@ export default function ProductGrid() {
             </svg>
           </div>
 
-          <div className="mt-10 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4 hide-scrollbar sm:grid sm:grid-cols-2 sm:overflow-visible sm:pb-0 lg:grid-cols-3">
+          <div className="mt-10 flex snap-x snap-mandatory gap-5 overflow-x-auto px-[12.5vw] pb-4 hide-scrollbar sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-3">
             {motorProducts.map((product) => (
               <div key={product.model} className="w-[75vw] min-w-[75vw] snap-center sm:w-auto sm:min-w-0 sm:snap-none">
                 <ProductCard product={product} />
