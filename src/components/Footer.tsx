@@ -32,40 +32,13 @@ export default function Footer() {
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-amber/10">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="h-5 w-5"
-                >
-                  <rect
-                    x="6"
-                    y="4"
-                    width="12"
-                    height="17"
-                    rx="2"
-                    stroke="#F59E0B"
-                    strokeWidth="2"
-                  />
-                  <rect
-                    x="9"
-                    y="2"
-                    width="6"
-                    height="2"
-                    rx="1"
-                    fill="#F59E0B"
-                  />
-                  <rect
-                    x="8"
-                    y="10"
-                    width="8"
-                    height="8"
-                    rx="1"
-                    fill="#F59E0B"
-                  />
-                </svg>
-              </div>
+            <div className="flex items-center gap-2.5">
+              <img
+                src="/logo-192.png"
+                alt="BatteryGo Logo"
+                className="h-9 w-9 rounded-lg"
+                draggable={false}
+              />
               <span className="font-display text-xl font-extrabold text-white">
                 BatteryGo
               </span>
