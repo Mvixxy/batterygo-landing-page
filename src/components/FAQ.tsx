@@ -34,7 +34,7 @@ const faqData: FAQItem[] = [
   {
     question: "Apakah melayani pengiriman aki ke lokasi?",
     answer:
-      "Ya, kami melayani pengiriman aki ke lokasi Anda di area Bogor dan sekitarnya. Hubungi kami via WhatsApp untuk info lebih lanjut mengenai areajangkauan dan biaya pengiriman.",
+      "Ya, kami melayani pengiriman aki ke lokasi Anda di area Bogor dan sekitarnya. Hubungi kami via WhatsApp untuk info lebih lanjut mengenai area jangkauan dan biaya pengiriman.",
   },
   {
     question: "Jam berapa toko BatteryGo buka?",
