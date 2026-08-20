@@ -166,7 +166,7 @@ function ProductCard({ product }: { product: Product }) {
   return (
     <div className="group relative flex flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-amber/30 hover:shadow-xl hover:shadow-amber/10">
       {/* Photo area */}
-      <div className="relative flex h-52 items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 to-gray-100 sm:h-56">
+      <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 to-gray-100">
         {/* Promo banner */}
         {product.promo && (
           <div className="absolute left-3 top-3 z-10 rounded-lg bg-gradient-to-r from-red-500 to-red-600 px-3 py-1.5 text-[11px] font-bold text-white shadow-md">
@@ -186,12 +186,9 @@ function ProductCard({ product }: { product: Product }) {
         <img
           src={product.photo}
           alt={product.photoAlt}
-          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+          className="h-full w-full object-contain p-4 transition-transform duration-500 group-hover:scale-110"
           loading="lazy"
         />
-
-        {/* Bottom gradient overlay */}
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-white/80 to-transparent" />
       </div>
 
       <div className="flex flex-1 flex-col p-5 sm:p-6">
