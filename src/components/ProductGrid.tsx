@@ -123,9 +123,9 @@ const motorProducts: Product[] = [
   {
     brand: "Aspira",
     model: "Aspira GM5Z-3B",
-    capacity: "3.5 Ah",
+    capacity: "5 Ah",
     warranty: "12 bulan",
-    vehicle: "Vario 125, Beat, Scoopy",
+    vehicle: "Mio, Supra, Jupiter",
     photo: "/products/astra-mf.jpg",
     photoAlt: "Aki Aspira GM5Z-3B untuk motor matic",
   },
@@ -140,12 +140,12 @@ const motorProducts: Product[] = [
   },
   {
     brand: "GOF Batt",
-    model: "GOF Batt AGM",
+    model: "GOF Batt AGM GTZ6V",
     capacity: "6 Ah",
     warranty: "12 bulan",
     vehicle: "Motor sport, adventure, touring",
     photo: "/products/gofbatt.jpg",
-    photoAlt: "Aki GOF Batt AGM untuk motor sport",
+    photoAlt: "Aki GOF Batt AGM GTZ6V untuk motor sport",
   },
   {
     brand: "Motobatt",
