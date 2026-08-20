@@ -52,7 +52,7 @@ export default function Hero() {
               <div className="inline-flex items-center gap-1 whitespace-nowrap rounded-full border border-amber/30 bg-amber/10 px-2.5 py-1 sm:px-4 sm:py-2">
                 <div className="h-1.5 w-1.5 rounded-full bg-amber charge-pulse sm:h-2 sm:w-2" />
                 <span className="text-[10px] font-medium text-amber sm:text-sm">
-                  Tersedia untuk Mobil & Motor
+                  Melayani tukar tambah aki
                 </span>
               </div>
             </div>
