@@ -43,6 +43,8 @@ const carProducts: Product[] = [
     capacity: "35 Ah",
     warranty: "12 bulan",
     vehicle: "Agya, Ayla, Brio, Splash",
+    promo: true,
+    promoText: "Favorit Grabcar!",
     photo: "/products/dryplus-mf.jpg",
     photoAlt: "Aki Dry Plus+ 36B20L untuk mobil kecil",
   },
