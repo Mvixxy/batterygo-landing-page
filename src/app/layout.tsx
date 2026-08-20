@@ -40,7 +40,8 @@ export const metadata: Metadata = {
     "baterai motor",
   ],
   icons: {
-    icon: "/favicon.svg",
+    icon: "/favicon.png",
+    apple: "/apple-touch-icon.png",
   },
   openGraph: {
     title: "Toko Aki 24 Jam Bogor | BatteryGo - Aki Mobil & Motor",
