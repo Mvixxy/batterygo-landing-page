@@ -1,4 +1,4 @@
-import { Phone, Zap, ImageOff } from "lucide-react";
+import { Phone, Zap } from "lucide-react";
 
 const WHATSAPP_NUMBER = "6282321006968";
 
@@ -11,95 +11,114 @@ interface Product {
   warranty: string;
   vehicle: string;
   popular?: boolean;
+  photo?: string;
+  photoAlt?: string;
 }
 
 const carProducts: Product[] = [
   {
     brand: "GS Astra",
-    model: "GS Hybrid 60",
-    capacity: "60 Ah",
-    priceOriginal: "Rp 625.000",
-    promoPrice: "Rp 585.000",
-    warranty: "24 bulan",
-    vehicle: "Avanza, Xenia, Agya, Ayla",
-    popular: true,
+    model: "GS Hybrid 36B20L",
+    capacity: "35 Ah",
+    priceOriginal: "Rp 425.000",
+    promoPrice: "Rp 395.000",
+    warranty: "12 bulan",
+    vehicle: "Agya, Ayla, Brio Satya",
+    photo: "/products/image-12.webp",
+    photoAlt: "Kemasan aki GS Hybrid 36B20L untuk mobil kecil",
   },
   {
     brand: "GS Astra",
-    model: "GS Hybrid 70",
-    capacity: "70 Ah",
-    priceOriginal: "Rp 725.000",
-    promoPrice: "Rp 685.000",
-    warranty: "24 bulan",
-    vehicle: "Innova, Rush, Terios",
-  },
-  {
-    brand: "Incoe",
-    model: "Incoe MF 60",
-    capacity: "60 Ah",
+    model: "GS Hybrid 46B24L",
+    capacity: "45 Ah",
     priceOriginal: "Rp 535.000",
-    promoPrice: "Rp 495.000",
-    warranty: "18 bulan",
-    vehicle: "Avanza, Xenia, Agya, Ayla",
+    promoPrice: "Rp 505.000",
+    warranty: "12 bulan",
+    vehicle: "Avanza, Xenia, Rush, Terios",
+    popular: true,
+    photo: "/products/image-4.webp",
+    photoAlt: "Kemasan aki GS Hybrid 46B24L untuk mobil keluarga",
   },
   {
     brand: "Incoe",
-    model: "Incoe MF 80",
+    model: "Incoe Gold 65D26R",
+    capacity: "65 Ah",
+    priceOriginal: "Rp 635.000",
+    promoPrice: "Rp 599.000",
+    warranty: "18 bulan",
+    vehicle: "Innova, Fortuner, Pajero",
+    photo: "/products/image-14.webp",
+    photoAlt: "Kemasan aki Incoe Gold 65D26R untuk mobil menengah ke atas",
+  },
+  {
+    brand: "Incoe",
+    model: "Incoe MF 580-24",
     capacity: "80 Ah",
     priceOriginal: "Rp 845.000",
     promoPrice: "Rp 795.000",
     warranty: "18 bulan",
-    vehicle: "Fortuner, Pajero, CR-V",
+    vehicle: "Fortuner, Pajero, CR-V, Everest",
     popular: true,
+    photo: "/products/image-5.webp",
+    photoAlt: "Kemasan aki Incoe MF 580-24 untuk mobil besar",
   },
   {
-    brand: "Yuasa",
-    model: "Yuasa YBX 5075",
+    brand: "GS Astra",
+    model: "GS Premium 12N10-3B",
+    capacity: "10 Ah",
+    priceOriginal: "Rp 235.000",
+    promoPrice: "Rp 215.000",
+    warranty: "12 bulan",
+    vehicle: "Motor sport & touring ringan",
+    photo: "/products/image-6.webp",
+    photoAlt: "Kemasan aki GS Premium 12N10-3B untuk motor sport",
+  },
+  {
+    brand: "GS Astra",
+    model: "GS Premium 65D31R",
     capacity: "75 Ah",
-    priceOriginal: "Rp 765.000",
-    promoPrice: "Rp 725.000",
-    warranty: "24 bulan",
-    vehicle: "Innova, Fortuner, Pajero",
-  },
-  {
-    brand: "Yuasa",
-    model: "Yuasa YBX 5060",
-    capacity: "60 Ah",
-    priceOriginal: "Rp 585.000",
-    promoPrice: "Rp 545.000",
-    warranty: "24 bulan",
-    vehicle: "Avanza, Xenia, Brio",
-  },
-  {
-    brand: "Marathon",
-    model: "Marathon MF 60",
-    capacity: "60 Ah",
-    priceOriginal: "Rp 465.000",
-    promoPrice: "Rp 425.000",
+    priceOriginal: "Rp 825.000",
+    promoPrice: "Rp 775.000",
     warranty: "12 bulan",
-    vehicle: "Avanza, Xenia, Brio, Agya",
+    vehicle: "Fortuner, Pajero, L300, Everest",
+    photo: "/products/image-7.webp",
+    photoAlt: "Kemasan aki GS Premium 65D31R untuk mobil besar",
   },
   {
-    brand: "Marathon",
-    model: "Marathon MF 80",
-    capacity: "80 Ah",
-    priceOriginal: "Rp 695.000",
-    promoPrice: "Rp 650.000",
+    brand: "GS Astra",
+    model: "GS Premium 105D31R",
+    capacity: "90 Ah",
+    priceOriginal: "Rp 1.050.000",
+    promoPrice: "Rp 995.000",
     warranty: "12 bulan",
-    vehicle: "Fortuner, Pajero, Everest",
+    vehicle: "Diesel pick-up & big SUV",
+    photo: "/products/image-9.webp",
+    photoAlt: "Kemasan aki GS Premium 105D31R untuk kendaraan diesel",
+  },
+  {
+    brand: "Amaron",
+    model: "Amaron Onyx N55",
+    capacity: "55 Ah",
+    priceOriginal: "Rp 655.000",
+    promoPrice: "Rp 610.000",
+    warranty: "18 bulan",
+    vehicle: "Avanza, Xenia, Rush, Brio",
+    photo: "/products/image-13.webp",
+    photoAlt: "Kemasan aki Amaron Onyx N55 untuk mobil harian",
   },
 ];
 
 const motorProducts: Product[] = [
   {
     brand: "GS Astra",
-    model: "GS GTZ5S",
-    capacity: "3.5 Ah",
-    priceOriginal: "Rp 210.000",
-    promoPrice: "Rp 185.000",
+    model: "GS GTZ4V",
+    capacity: "3 Ah",
+    priceOriginal: "Rp 185.000",
+    promoPrice: "Rp 165.000",
     warranty: "12 bulan",
     vehicle: "Vario 125, Beat, Scoopy",
-    popular: true,
+    photo: "/products/photoroom-20260820-132438.webp",
+    photoAlt: "Kemasan aki GS GTZ4V untuk motor matic",
   },
   {
     brand: "GS Astra",
@@ -109,43 +128,53 @@ const motorProducts: Product[] = [
     promoPrice: "Rp 265.000",
     warranty: "12 bulan",
     vehicle: "NMAX, Aerox, PCX, ADV",
-  },
-  {
-    brand: "Incoe",
-    model: "Incoe MF YTZ4V",
-    capacity: "3 Ah",
-    priceOriginal: "Rp 175.000",
-    promoPrice: "Rp 145.000",
-    warranty: "12 bulan",
-    vehicle: "Vario 125, Beat, Scoopy",
-  },
-  {
-    brand: "Incoe",
-    model: "Incoe MF YTZ6V",
-    capacity: "5 Ah",
-    priceOriginal: "Rp 245.000",
-    promoPrice: "Rp 215.000",
-    warranty: "12 bulan",
-    vehicle: "NMAX, Aerox, PCX",
     popular: true,
+    photo: "/products/image-11.webp",
+    photoAlt: "Kemasan aki GS Astra untuk motor maxi matic",
   },
   {
-    brand: "Yuasa",
-    model: "Yuasa YTZ4V",
-    capacity: "3 Ah",
-    priceOriginal: "Rp 195.000",
-    promoPrice: "Rp 165.000",
+    brand: "Aspira",
+    model: "Aspira GM5Z-3B",
+    capacity: "3.5 Ah",
+    priceOriginal: "Rp 175.000",
+    promoPrice: "Rp 155.000",
     warranty: "12 bulan",
     vehicle: "Vario 125, Beat, Scoopy",
+    photo: "/products/image-3.webp",
+    photoAlt: "Kemasan aki Aspira GM5Z-3B untuk motor matic",
   },
   {
-    brand: "Yuasa",
-    model: "Yuasa YTZ7V",
+    brand: "GS Astra",
+    model: "GS GTZ8V",
     capacity: "6 Ah",
     priceOriginal: "Rp 315.000",
     promoPrice: "Rp 285.000",
     warranty: "12 bulan",
     vehicle: "NMAX, Aerox, PCX, ADV",
+    photo: "/products/image-10.webp",
+    photoAlt: "Kemasan aki GS GTZ8V edisi spesial untuk motor maxi matic",
+  },
+  {
+    brand: "Dry Plus",
+    model: "Dry Plus+ 36B20L",
+    capacity: "35 Ah",
+    priceOriginal: "Rp 395.000",
+    promoPrice: "Rp 370.000",
+    warranty: "12 bulan",
+    vehicle: "Agya, Ayla, Brio, Splash",
+    photo: "/products/image-1.webp",
+    photoAlt: "Kemasan aki Dry Plus+ 36B20L untuk mobil kecil",
+  },
+  {
+    brand: "Motobatt",
+    model: "Motobatt MBTX9U",
+    capacity: "10.5 Ah",
+    priceOriginal: "Rp 425.000",
+    promoPrice: "Rp 395.000",
+    warranty: "12 bulan",
+    vehicle: "Big bike, touring, custom",
+    photo: "/products/image-8.webp",
+    photoAlt: "Kemasan aki Motobatt MBTX9U untuk motor besar",
   },
 ];
 
@@ -154,30 +183,45 @@ function ProductCard({ product }: { product: Product }) {
     `Halo BatteryGo, saya tertarik dengan:\n\n*${product.brand} ${product.model}*\nKapasitas: ${product.capacity}\nHarga Promo: ${product.promoPrice}\n\nMohon info lebih lanjut.`
   );
 
+  const discount = (() => {
+    const orig = parseInt(product.priceOriginal.replace(/\D/g, ""));
+    const promo = parseInt(product.promoPrice.replace(/\D/g, ""));
+    return Math.round(((orig - promo) / orig) * 100);
+  })();
+
   return (
-    <div className="group relative flex flex-col rounded-2xl border border-gray-100 bg-white shadow-sm transition-all hover:border-amber/30 hover:shadow-lg hover:shadow-amber/5">
-      {/* Photo placeholder */}
-      <div className="relative flex h-44 items-center justify-center overflow-hidden rounded-t-2xl bg-gradient-to-br from-slate-bg to-gray-100">
+    <div className="group relative flex flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-amber/30 hover:shadow-xl hover:shadow-amber/10">
+      {/* Photo area */}
+      <div className="relative flex h-52 items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 to-gray-100 sm:h-56">
+        {/* Discount badge */}
+        <div className="absolute left-3 top-3 z-10 rounded-lg bg-red-500 px-2.5 py-1 text-[11px] font-bold text-white shadow-md">
+          HEMAT {discount}%
+        </div>
+
+        {/* Popular badge */}
         {product.popular && (
-          <div className="absolute right-3 top-3 z-10 flex items-center gap-1 rounded-full bg-amber px-3 py-1 text-xs font-bold text-navy shadow-sm">
+          <div className="absolute right-3 top-3 z-10 flex items-center gap-1 rounded-full bg-amber px-3 py-1 text-[11px] font-bold text-navy shadow-md">
             <Zap className="h-3 w-3" />
             Populer
           </div>
         )}
-        <div className="flex flex-col items-center gap-2 text-gray-300">
-          <ImageOff className="h-10 w-10" />
-          <span className="text-xs font-medium">Foto Produk</span>
-        </div>
-        {/* Discount badge */}
-        <div className="absolute left-3 top-3 rounded-lg bg-red-500 px-2 py-1 text-[11px] font-bold text-white shadow-sm">
-          HEMAT{" "}
-          {(() => {
-            const orig = parseInt(product.priceOriginal.replace(/\D/g, ""));
-            const promo = parseInt(product.promoPrice.replace(/\D/g, ""));
-            const disc = Math.round(((orig - promo) / orig) * 100);
-            return `${disc}%`;
-          })()}
-        </div>
+
+        {/* Product image */}
+        {product.photo ? (
+          <img
+            src={product.photo}
+            alt={product.photoAlt || product.model}
+            className="h-full w-full object-contain p-3 transition-transform duration-500 group-hover:scale-110"
+            loading="lazy"
+          />
+        ) : (
+          <div className="flex flex-col items-center gap-2 text-gray-300">
+            <span className="text-xs font-medium">Foto Produk</span>
+          </div>
+        )}
+
+        {/* Bottom gradient overlay */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-white/80 to-transparent" />
       </div>
 
       <div className="flex flex-1 flex-col p-5 sm:p-6">
@@ -187,7 +231,7 @@ function ProductCard({ product }: { product: Product }) {
         </div>
 
         {/* Product name */}
-        <h3 className="font-display text-lg font-bold text-dark">
+        <h3 className="font-display text-lg font-bold text-dark leading-tight">
           {product.model}
         </h3>
 
@@ -218,7 +262,7 @@ function ProductCard({ product }: { product: Product }) {
             href={`https://wa.me/${WHATSAPP_NUMBER}?text=${waMessage}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex w-full items-center justify-center gap-2 rounded-xl bg-whatsapp px-4 py-3 text-sm font-bold text-white transition-all hover:bg-whatsapp-dark"
+            className="flex w-full items-center justify-center gap-2 rounded-xl bg-whatsapp px-4 py-3 text-sm font-bold text-white shadow-md shadow-whatsapp/20 transition-all hover:bg-whatsapp-dark hover:shadow-lg hover:shadow-whatsapp/30"
           >
             <Phone className="h-4 w-4" />
             Pesan Sekarang
@@ -272,11 +316,11 @@ export default function ProductGrid() {
               Produk Kami
             </span>
             <h2 className="mt-4 font-display text-3xl font-bold text-dark sm:text-4xl">
-              Aki <span className="text-amber">Motor</span>
+              Aki <span className="text-amber">Motor & Aki Spesial</span>
             </h2>
             <p className="mt-4 text-base text-muted sm:text-lg">
               Aki motor untuk semua tipe, dari matic harian sampai big bike.
-              Harga transparan, garansi jelas.
+              Tersedia juga aki khusus untuk kebutuhan spesifik.
             </p>
           </div>
 
