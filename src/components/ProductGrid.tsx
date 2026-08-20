@@ -21,7 +21,7 @@ const carProducts: Product[] = [
     model: "GS Hybrid 36B20L",
     capacity: "35 Ah",
     warranty: "12 bulan",
-    vehicle: "Agya, Ayla, Brio Satya",
+    vehicle: "Agya, Ayla, Brio Satya, Jazz, Sigra",
     photo: "/products/gs-hybrid.jpg",
     photoAlt: "Aki GS Hybrid 36B20L untuk mobil kecil",
   },
