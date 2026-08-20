@@ -118,7 +118,7 @@ export default function RootLayout({
                   closes: "21:00",
                 },
               ],
-              priceRange: "Rp 145.000 - Rp 795.000",
+              priceRange: "Harga Nego via WhatsApp",
               areaServed: {
                 "@type": "GeoCircle",
                 geoMidpoint: {
